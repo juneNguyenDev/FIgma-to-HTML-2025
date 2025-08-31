@@ -500,6 +500,7 @@ a {
 /* ===================Feature 2============= */
 .feature-second {
   margin-top: 70px;
+  padding: 65px 0;
 }
 .feature-second .body {
   display: flex;
@@ -540,4 +541,103 @@ a {
   background: var(--common-color);
   width: 137px;
   height: 50px;
+}
+/* ===========Blog============ */
+.blogs {
+  margin-top: 135 px;
+  padding: 96px 0;
+  background-color: #fffcf4;
+}
+.blogs .blog-top {
+  text-align: center;
+  margin-bottom: 55px;
+}
+.blogs .blog-top .desc {
+  color: #696262;
+  font-size: 16px;
+  line-height: 28px; /* 175% */
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.blogs .blog-list {
+  overflow: hidden;
+  gap: 30px;
+  display: flex;
+}
+.blogs .blog-list .item {
+  width: calc(33.33% - 30px);
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #fff;
+}
+.blogs .blog-list .item .thumb {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.blogs .item .info {
+  padding: 20px 20px 28px;
+}
+.blogs .item .date {
+  color: #5f5b53;
+  font-size: 14px;
+  line-height: 26px; /* 185.714% */
+  position: relative;
+  display: inline-flex;
+  pd: 12px;
+  align-items: center;
+}
+.blogs .item .date::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 4px;
+  background: var(--common-color);
+}
+.blogs .item .date::after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  right: -27px;
+  left: 0;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+  position: absolute;
+}
+.blogs .item .title {
+  color: #171100;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px; /* 175% */
+}
+.blogs .item .btn {
+  margin-top: 12px;
+}
+.blogs .item .btn:hover {
+  background: #ffb900;
+}
+.blogs .dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 38px;
+  gap: 6px;
+}
+.blogs .dots .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background: #5f5b53;
+  cursor: pointer;
+}
+.blogs .dots .dot.active {
+  background: #ffb900;
+  cursor: default;
 }
