@@ -498,8 +498,12 @@ a {
   background: var(--common-color);
 }
 /* ===================Feature 2============= */
+.feature-second {
+  margin-top: 70px;
+}
 .feature-second .body {
   display: flex;
+  justify-content: space-between;
 }
 .feature-second .body .images {
   width: 40%;
@@ -511,7 +515,7 @@ a {
   border-radius: 20px;
 }
 .feature-second .content {
-  width: 60%;
+  width: 49%;
   display: flex;
   flex-direction: column;
   justify-content: center;
